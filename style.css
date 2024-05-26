@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --headings-clr: hsl(218, 6%, 38%);
+  --text-clr: hsl(195, 3%, 71%);
+
+  --btn-clr-ios: hsl(171, 52%, 58%);
+  --btn-clr-mac: hsl(233, 100%, 77%);
+
+  --btn-clr-text: hsl(0 0% 100%);
+  --btn-clr-ios-hover: hsl(171 52% 58% /0.2);
+  --btn-clr-mac-hover: hsl(233 100% 77% / 0.2);
+
+  --btn-border-radius: 0.8rem;
+
+  --footer-bg: hsl(0, 0%, 84%);
+  --footer-text-clr: hsl(228, 3%, 61%);
+  --footer-text-clr-hover: hsl(171 52% 58% / 0.6);
+
+  --heading-fs: clamp(1.2rem, 1.4rem, 1.6rem);
+  --sub-heading-fs: clamp(1rem, 1.2rem, 1.4rem);
+  --footer-heading-fs: clamp(0.6em, 0.8em, 1em);
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.align-center-text {
+  text-align: center;
+}
+
+h1 {
+  color: var(--headings-clr);
+  font-size: var(--heading-fs);
+}
+
+h2 {
+  color: var(--headings-clr);
+  font-size: var(--sub-heading-fs);
+}
+
+h3 {
+  color: var(--headings-clr);
+  font-size: var(--footer-heading-fs);
+}
+
+p {
+  color: var(--text-clr);
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+[alt="main-logo"] {
+  width: 40%;
+  margin-block: 3em;
+}
+
+.flex {
+  margin-top: 1em;
+  margin-bottom: 1.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+  text-align: center;
+}
+
+.flex img {
+  width: 30%;
+}
+
+.logos {
+  gap: 2em;
+}
+.logos img {
+  width: 80%;
+}
+@media (width > 560px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.footer-navs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+[alt="footer-logo"] {
+  width: 20%;
+  margin-top: 0.8em;
+}
+
+.footer-imgs{
+    display: flex;
+    flex-direction: column;
+    gap:0.8em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
