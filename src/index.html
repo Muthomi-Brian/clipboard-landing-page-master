@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/src/output.css" />
+
+    <title>Frontend Mentor | Clipboard landing page</title>
+  </head>
+  <body class="bg-slate-100 font-mono">
+    <div
+      class="container w-4/5 mx-auto max-w-2xl mt-8 flex flex-col items-center gap-8"
+    >
+      <main class="flex flex-col items-center text-center gap-3">
+        <img src="/images/main-logo.svg" alt="main-logo" class="w-10" />
+        <h1 class="text-2xl text-gray-600">A history of everything you copy</h1>
+        <p class="text-gray-400 text-sm max-w-prose">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your Clipboard on all your devices.
+        </p>
+
+        <div class="flex gap-4 flex-col lg:flex-row">
+          <button
+            class="text-white bg-green-500 hover:bg-green-300 text-sm p-1.5 rounded-xl"
+          >
+            Download for iOS
+          </button>
+          <button
+            class="text-white bg-blue-500 hover:bg-blue-300 text-sm p-1.5 rounded-xl"
+          >
+            Download for Mac
+          </button>
+        </div>
+      </main>
+      <article class="flex flex-col gap-8">
+        <section class="text-center">
+          <h2 class="text-gray-600 text-xl">Keep track of your snippets</h2>
+          <p class="text-gray-400 text-sm">
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </section>
+        <section
+          class="flex flex-col sm:justify-center gap-4 lg:justify-between lg:flex-row"
+        >
+          <img
+            src="/images/image-computer.png"
+            alt="image-computer"
+            class="block w-2/4 mx-auto"
+          />
+          <div class="flex flex-col gap-5">
+            <div>
+              <h2 class="text-base text-gray-600">Quick Search</h2>
+              <p class="text-xs text-gray-400">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+            <div>
+              <h2 class="text-base text-gray-600">iCloud Sync</h2>
+              <p class="text-xs text-gray-400">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+            <div>
+              <h2 class="text-base text-gray-600">Complete History</h2>
+              <p class="text-xs text-gray-400">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-center text-gray-500 text-xl m-3">
+            Access Clipboard anywhere
+          </h2>
+          <p class="text-center text-xs text-gray-400">
+            Whether you're on the go or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks.
+          </p>
+          <img
+            src="/images/image-devices.png"
+            alt="device"
+            class="w-1/2 m-auto mt-3"
+          />
+          <h2 class="text-center text-gray-500 text-xl mb-2">
+            Supercharge your workflow
+          </h2>
+          <p class="text-center text-xs text-gray-400">
+            We've got the tools to boost your productivity.
+          </p>
+        </section>
+
+        <section class="flex flex-col lg:flex-row">
+          <div class="text-center flex flex-col items-center">
+            <img src="/images/icon-blacklist.svg" alt="icon-blacklist" />
+            <h2 class="text-sm text-gray-600 m-auto">Create blacklists</h2>
+            <p class="text-xs text-gray-400">
+              Ensure sensitive information never makes its way to your Clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center mt-8 lg:mt-0">
+            <img src="/images/icon-text.svg" alt="icon-text" />
+            <h2 class="text-sm text-gray-600 m-auto">Plain Text Snippets</h2>
+            <p class="text-xs text-gray-400">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div class="text-center flex flex-col items-center mt-8 lg:mt-0">
+            <img src="/images/eye-icon.svg" alt="icon-preview" />
+            <h2 class="text-sm text-gray-600 m-auto">Sneak Preview</h2>
+            <p class="text-xs text-gray-400">
+              Quick preview of all snippets to ensure you copy the correct
+              content.
+            </p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
